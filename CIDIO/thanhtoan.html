@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Phương Văn Cường - 15/2/2017-->
+	<meta charset="UTF-8">
+	<title>Xát nhận thanh toán vé</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<style type="text/css">
+
+	body{
+		margin: auto;
+		font-family: 'Time New Roman';
+	}
+
+	.container{
+		max-width: 960px;
+	}
+
+
+
+	.head{
+		text-align: center;
+		padding: 10px;
+		line-height: 10px;
+		font-size: 25px;
+		color: dodgerblue;
+		background-color: antiquewhite;
+	}
+
+
+	.foot{
+		text-align: center;
+		border-top: solid 2px #456;;
+		padding: 5px;
+		padding-top: 20px;
+		color: #fff;
+		background-color: dimgrey
+	}
+
+	.phdr{
+		color: #fff;
+		background-color: rgba(124, 124, 124, 0.3);
+		padding: 5px;
+		border-radius: 5px;
+		font-size: 20px;
+	}
+
+	.content-top{
+		background-color: aliceblue;
+		padding: 5px;
+
+	}
+
+	.content-top li{
+		font-size: 20px;
+		padding-left: 20%;
+		font-size: 19px;
+		color: #555;
+	}
+
+	.content-bottom{
+		background-color: floralwhite;
+		padding: 5px;
+	}
+
+	.list{
+		background-color: dodgerblue;
+		margin-bottom: 5px;
+		padding: 5px;
+		color: #fff;
+
+	}
+
+	.input-edit{
+		width: 200px;
+	}
+
+
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+	});
+
+
+</script>
+</head>
+<body>
+	<div class="head"><a href="index.html"><h2>CINIMA IMAGE</h2></a></div>
+	<div class="container">
+		<div  style="background-color: rgba(124, 124, 124, 0.1)">
+			<div class="content-top">
+				<h3 class="phdr">Thanh toán cho các mục</h3>
+				<li>Phim hoa vàng trên cỏ xanh</li>
+				<li>Phim Bụi đời chợ lớn</li>
+				<li>Phim cô hai</li>
+			</div>
+			<div class="content-bottom">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="list">
+							Số dư trong tài khoản: 300 000 VND
+						</div>
+						<div class="list">Tình trạng : Có thể thanh toán
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="list">
+							Số tiền cần thanh toán : 250 000 VND
+						</div>
+						<div class="list">Số dư còn lại : 50 000 VND
+						</div>
+					</div>
+					<div class="col-md-12">
+						<form class="form-inline" style="width: 100%">
+							<input class="form-control input-edit " placeholder="Nhập capcha" style="width: 30%">
+							<div style="width: 50%; text-align: right; padding-right: 10px;"><img src="screenshots/quick-edit.png" height="35px;" style="width: 50%"></div>
+							<button class="btn btn-edit" style="width: 20%">Thanh toán</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="foot"><h3>DO AN CIDIO 3 </h3><p>Duy Tan</p></div>   
+</body>
+</html>

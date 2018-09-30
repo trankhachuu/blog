@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Phương Văn Cường- 15/12/2017-->
+	<meta charset="UTF-8">
+	<title>Đăng nhập / Đăng kí</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<style type="text/css">
+	.login_form{
+		width: 350px;
+		padding-top: 10px;
+	}
+
+	.btn-login{
+		width:100%
+	}
+
+	.foot-login{
+		margin-top: 5px;
+	}
+
+	.hide-login{
+		float: left;
+	}
+
+	.register-tips{
+		float: right;
+		color: dodgerblue;
+	}
+	.register-form{
+		margin-top: 5px;
+	}
+		/*
+        
+        .register-form{
+            transition: all 0.5s ease-in-out;
+        }
+        */
+        .head{
+        	text-align: center;
+        	padding: 10px;
+        	line-height: 10px;
+        	background-color: aliceblue;
+        	font-size: 25px;
+        	color: dodgerblue;
+        }
+
+        .foot{
+        	text-align: center;
+        	margin-top: 20px;
+        	background-color: deepskyblue;
+        	padding: 5px;
+        	padding-top: 20px;
+        	color: #fff;
+        }
+
+        .login-form-input{
+        	margin-top: 5px;
+        }
+        /**/
+
+        .login-link{
+        	text-align: center;
+        	margin-top: 5px;
+        	color: dodgerblue;
+        	cursor: pointer;
+        }
+
+        .cuong_daik{
+        	height: 65px;
+        	color: #FFF;
+        	font-weight: 600;
+        	line-height: 65px;
+        	background-color: rgba(0, 148, 255, 0.5);
+        	width: 100%;
+        	top: 0px;
+        	z-index: 2;
+        	font-size: 20px;
+        	
+        }
+
+        .float-right{
+        	max-width: 960px;
+        	margin: 0 auto;
+
+        }
+
+        .cuong_daik > .float-right > span{
+        	display: inline-block;
+        	margin-right: 20px;
+        	height: 50px;
+        	line-height: 50px;
+
+        }
+
+        .cuong_daik > .float-right > span > a{
+        	color: #fff;
+        	text-decoration: none;
+        }
+        .cuong_daik > .float-right > span > a:hover{
+        	color: #2388DBFF;
+        }
+    </style>
+
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.register-form').hide(); 
+    		$('.login-link').hide(); 
+    		$('.register-tips').click(function(){
+    			$('.login-link').show(200); 
+    			$('.register-form').show(200);
+    			$('.foot-login').hide(100);
+    			$('.hide-login').hide(0);
+    		});
+
+    		$('.login-link').click(function(){
+    			$('.register-form').hide(200);
+    			$('.foot-login').show(100);
+    			$('.hide-login').show(0);
+    			$('.login-link').hide(100);
+    		});
+    	});
+    </script>
+
+</head>
+<body>
+	<div class="nav cuong_daik"><div class="float-right"><span><a href="index.html">Home</a></span><span><a href="index.html">Phim Mới</a></span></div></div>
+	<div  style="background-color: rgba(124, 124, 124, 0.1)">
+		<div class="container login_form clearfix" >
+			<form class="form-signin" >
+				<h2><center>Đăng nhập/Đăng kí</center></h2>
+				<input type="email" name="email" class="form-control login-form-input" placeholder="Số điện thoại">
+				<input type="text" name="tenthanhvien" class="form-control register-form" placeholder="Nhập họ tên thành viên">    
+				<input type="password" name="matkhau" class="form-control login-form-input" placeholder="Nhập mật khẩu">
+				<input type="password" name= "nhaplaimatkhau" class="form-control register-form" placeholder="Nhập lại mật khẩu">
+				<input type="text" name="tenthanhvien" class="form-control register-form" placeholder="Địa chỉ">
+				<select class="form-control register-form">
+					<option>Chọn giới tính</option>
+					<option>Nam</option>
+					<option>Nữ</option>
+				</select>
+				<div class="foot-login">
+					<div class="checkbox hide-login">
+						<label>
+							<input type="checkbox" value="remember-me" name="submit"> Nhớ đăng nhập
+						</label>
+					</div>
+					<div class="register-tips">Chưa có tài khoản</div>
+				</div>
+				<button class="btn btn-login hide-login" type="submit" name="dangnhap">Đăng nhập</button>
+				<button class="btn btn-login register-form" type="submit" name="dangki">Đăng kí</button>
+				<button class="btn btn-login register-form" type="submit" name="dangki">Liên kết bằng tài khoản Facebook</button>   
+			</form>
+			<div class="login-link"><p>Tôi đã có tài khoản</p></div>
+		</div>
+		<div class="foot"><h3>DO AN CIDIO 3 </h3><p>Duy Tan</p></div></div>
+	</body>
+	</html>

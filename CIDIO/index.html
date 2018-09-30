@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trang đặt vé xem phim</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="home/css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="home/css/slider.css">
+	<link rel="stylesheet" href="home/css/bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <link rel="stylesheet" href="home/css/slider.css">
+	<script src="home/js/jquery-1.7.min.js"></script>
+	<script src="home/js/jquery.easing.1.3.js"></script>
+	<script src="home/js/tms-0.4.1.js"></script>
+	<style type="text/css">
+	body{
+		font-family: 'Times New Roman', monospace;
+	}
+</style>
+
+<script>
+	$(document).ready(function(){
+		$('.slider')._TMS({
+			show:0,
+			pauseOnHover:true,
+			prevBu:'.prev',
+			nextBu:'.next',
+			playBu:false,
+			duration:500,
+			preset:'fade',
+                pagination:true,//'.pagination',true,'<ul></ul>'
+                pagNums:false,
+                slideshow:8000,
+                numStatus:false,
+                banners:'fromBottom',// fromLeft, fromRight, fromTop, fromBottom
+                waitBannerAnimation:false,
+                progressBar:false
+            })
+
+	})
+	$(function(){
+		if($(window).width() <= 1066)
+		{
+			$("#slider .prev").css("left", "55px")
+			$("#slider .next").css("right", "55px")
+		}
+	})
+</script>
+</head>
+<body>
+
+<div class="nav cuong_daik"><div class="float-right"><span><a href="index.html">Home</a></span><span><a href="giohang.html">Giỏ Hàng</a></span><span><a href="giohang.html">Lịch sử</a></span><span><a href="index.html">Phim Mới</a></span><span><a href="dk-dn.html">Đăng kí/Đăng nhập</a></span></div></div>
+
+<div id="slider" style="margin-top: 10px">
+	<div class="slider-block">
+		<div class="slider">
+			<ul class="items">
+				<li><img src="home/images/movie1.png" alt="" /><div class="banner"><div><span>Liên Minh Công Lý 1</span><strong>Hoang</strong><p>Tháng 10, mùa của Halloween rùng rợn cuối cùng đã qua, nhưng có vẻ như đội quân kinh dị vẫn chưa có ý định rút lui. </p><a href="baiviet.html" class="button">Chi tiết</a></div></div></li>
+				<li><img src="home/images/1.jpg" alt="" /><div class="banner"><div><span>Liên Minh Công Lý 2</span><strong>Hoang</strong><p>Tháng 11 mở đầu với những tác phẩm đen tối như Flatliners, Marrowbone, Haunted Hotel, Out of the Shadows và The Promise. </p><a href="baiviet.html" class="button">Chi tiết</a></div></div></li>
+				<li><img src="home/images/2.jpg" alt="" /><div class="banner"><div><span>Liên Minh Công Lý 3</span><strong>Hoang</strong><p>Tuy nhiên, người xem phim vẫn còn những lựa chọn khác như bom tấn đình đám như Justice League hay phim hoạt hình của Pixar là Coco.</p><a href="baiviet.html" class="button">Chi tiết</a></div></div></li>
+			</ul>
+		</div>
+		<a href="#" class="prev"></a>
+		<a href="#" class="next"></a>
+	</div>
+</div>
+
+<style type="text/css">
+.phdr{
+	background-color: rgba(255, 75, 75, 0.5);
+	padding: 15px;
+	font-size: 25px;
+	color: #24A9DAFF;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+
+}
+
+.fix_thum{
+	padding: 5px;
+	border:solid 1px rgba(142, 142, 142, 0.2);
+	margin-bottom: 10px;
+}
+
+.fix_by_cuong{
+	width: 90%;
+}
+
+h4{
+	color: #fff;
+}
+
+.cuong{
+	position: relative;
+}
+
+.sub-cuong{
+	position: absolute;
+	bottom: 0px;
+	left: 5px;
+	display: none;
+	right: -6px;
+	height: 40%;
+	text-align: center;
+	color: #fff;
+	background: rgba(255, 76, 0, 0.5);
+}
+
+.cuong:hover > .sub-cuong{
+	display: block;
+	animation-name: amination1;
+	animation-duration: 0.5s;
+}
+
+.div_cha{
+	position: relative;
+	margin-top: 20px;
+}
+
+.div_con{
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	bottom: 10px;
+	color: #555;
+	font-size: 20px;
+	font-weight: 600;
+	display: none;
+	width: 60%;
+	padding-top: 20px;
+}
+
+.div_cha:hover > .div_con{
+	display: block;
+	animation-name: amination;
+	animation-duration: 0.5s;
+}
+
+
+@keyframes amination {
+	0% {
+		height: : 0%;
+		opacity: 0;
+		margin-left: -50%;
+	} 
+
+	100% {
+		height: : 100%;
+		opacity: 1;
+		margin-left : 0%;
+	}
+}
+
+@keyframes amination1 {
+	0% {
+		opacity: 0;
+	} 
+
+	100% {
+		opacity: 1;
+	}
+}
+</style>
+<div class="container"><div class="phdr">PHIM SẮP KHỞI CHIẾU</div></div>
+
+<div>
+
+	<div class="container">
+		<div class="carousel listslider"  style="max-width: 960px; height: 310px;">
+			<div class="nav nav-left">
+				<div class="bor">
+					<div class="glyphicon glyphicon-chevron-left"></div>
+				</div>
+
+			</div>
+
+			<div class="carousel-content">
+
+				<div class = "cuong"><a class="fix_thum maximages" href="muave.html"><img alt="" src="http://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-Star-Trai-Nghiem-Diem-Chet-poster-470x700-245x365.jpg"></a>
+					<div class="sub-cuong"><h2>Phim ABC</h2><button class="btn btn-primary" style="width: 150px;">Đặt vé</button></div>
+				</div>
+				<div class = "cuong"><a class="fix_thum maximages" href="muave.html"><img alt="" src="http://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-Star-24-Hour-To-Live-poster-470x700-245x365.jpg"></a>
+					<div class="sub-cuong"><h2>Phim ABC</h2><button class="btn btn-primary" style="width: 150px;">Đặt vé</button></div>
+				</div>
+				<div class = "cuong"><a class="fix_thum maximages" href="muave.html"><img alt="" src="http://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-STAR-SMART-CHASE-470X700-POSTER.jpg-2-245x365.jpg"></a>
+					<div class="sub-cuong"><h2>Phim ABC</h2><button class="btn btn-primary" style="width: 150px;">Đặt vé</button></div>
+
+				</div>
+				<div class = "cuong"><a class="fix_thum maximages" href="muave.html"><img alt="" src="http://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-STAR-SUBURBICON-470X700-245x365.jpg"></a>
+					<div class="sub-cuong"><h2>Phim ABC</h2><button class="btn btn-primary" style="width: 150px;">Đặt vé</button></div>
+				</div>
+				<div class = "cuong"><a class="fix_thum maximages" href="muave.html"><img alt="" src="http://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-Star-Trai-Nghiem-Diem-Chet-poster-470x700-245x365.jpg"></a>
+					<div class="sub-cuong"><h2>Phim ABC</h2><button class="btn btn-primary" style="width: 150px;">Đặt vé</button></div>
+				</div>
+				<div class = "cuong"><a class="fix_thum maximages" href="muave.html"><img alt="" src="http://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-Star-24-Hour-To-Live-poster-470x700-245x365.jpg"></a>
+					<div class="sub-cuong"><h2>Phim ABC</h2><button class="btn btn-primary" style="width: 150px;">Đặt vé</button></div>
+				</div>
+				<div class = "cuong"><a class="fix_thum maximages" href="muave.html"><img alt="" src="http://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-STAR-SMART-CHASE-470X700-POSTER.jpg-2-245x365.jpg"></a>
+
+					<div class="sub-cuong"><h2>Phim ABC</h2><button class="btn btn-primary" style="width: 150px;">Đặt vé</button></div>
+				</div>
+				<div class = "cuong"><a class="fix_thum maximages" href="muave.html"><img alt="" src="http://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-STAR-SUBURBICON-470X700-245x365.jpg"></a>
+					<div class="sub-cuong"><h2>Phim ABC</h2><button class="btn btn-primary" style="width: 150px;">Đặt vé</button></div>
+				</div>
+
+			</div>
+
+			<div class="nav nav-right">
+				<div class="bor">
+					<div class="glyphicon glyphicon-chevron-right"">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clr"></div>
+	<div  class="container" style="margin-top: 10px;">
+		<div class="phdr" style="margin: 0; margin-bottom: 5px;">Danh sách phim<div style="float: right;width: 35%"><select style="width: 65%;padding: 3px 0; float: right;"><option>Thể loại</option><option>Giá cao đến thấp</option><option>Giá thấp đếm cao</option></select></div></div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-4 div_cha" style="text-align: center"><div class="fix_thum"><img src="http://www.horsaga.com.tw/eventLabar/470.jpg"  width="100%"></div><div class="div_con">Thông tin film <br> 15/12/2017 <h2 style="color: #FF5700FF">Tôi thấy hoa vàng trên cỏ xanh</h2> <a href="muave.html" class="btn btn-primary" style="width: 60%">Đặt Vé</a></div></div>
+
+
+
+
+					<div class="col-lg-4 div_cha" style="text-align: center"><div class="fix_thum"><img src="https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=470,da=l,ds=s,cc=FFFFFF)/assets/images/986787/original/00171ffb-0a69-40e3-8938-cbd1c28eea50.jpeg?1483609265"  width="100%"></div><div class="div_con">Thông tin film <br> 15/12/2017 <h2 style="color: #FF5700FF">Tôi thấy hoa vàng trên cỏ xanh</h2> <a href="muave.html" class="btn btn-primary" style="width: 60%">Đặt Vé</a></div></div>
+
+
+					<div class="col-lg-4 div_cha" style="text-align: center"><div class="fix_thum"><img src="http://www.horsaga.com.tw/XmasBingo/facebook.png"  width="100%"></div><div class="div_con">Thông tin film <br> 15/12/2017 <h2 style="color: #FF5700FF">Tôi thấy hoa vàng trên cỏ xanh</h2> <a href="muave.html" class="btn btn-primary" style="width: 60%">Đặt Vé</a></div></div>
+
+
+					<div class="col-lg-4 div_cha" style="text-align: center"><div class="fix_thum"><img src="https://pm1.narvii.com/6449/d61fd6f961cfc2c49c166f4625a241132e6a7f9c_00.jpg"  width="100%"></div><div class="div_con">Thông tin film <br> 15/12/2017 <h2 style="color: #FF5700FF">Tôi thấy hoa vàng trên cỏ xanh</h2> <a href="muave.html" class="btn btn-primary" style="width: 60%">Đặt Vé</a></div></div>
+
+
+					<div class="col-lg-4 div_cha" style="text-align: center"><div class="fix_thum"><img src="https://videogameanimereview.files.wordpress.com/2017/07/pokemon-go-anniversary.jpg?w=470"  width="100%"></div><div class="div_con">Thông tin film <br> 15/12/2017 <h2 style="color: #FF5700FF">Tôi thấy hoa vàng trên cỏ xanh</h2> <a href="muave.html" class="btn btn-primary" style="width: 60%">Đặt Vé</a></div></div>
+
+
+					<div class="col-lg-4 div_cha" style="text-align: center"><div class="fix_thum"><img src="https://orig00.deviantart.net/9517/f/2015/018/c/e/030_by_komarinyuu-d8edxd1.png"  width="100%"></div><div class="div_con">Thông tin film <br> 15/12/2017 <h2 style="color: #FF5700FF">Tôi thấy hoa vàng trên cỏ xanh</h2> <a href="muave.html" class="btn btn-primary" style="width: 60%">Đặt Vé</a></div></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"><p><strong>CIDIO 2</strong></p></div>
+	<style type="text/css">
+	.footer{
+		text-align: center;
+		padding: 5px;
+		background-color: #388EC6FF;
+		color:#FFF;
+		font-size: 20px;
+	}
+</style>
+
+
+<script src="home/js/slider.js"></script>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+			x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 1000); // Change image every 2 seconds
+    }
+</script>
+
+</body>
+</html>

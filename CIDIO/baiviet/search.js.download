@@ -1,0 +1,25 @@
+$(document).ready(function(){
+    $(".img-search").hide();
+
+    var check = 0;
+
+    // $("input.timkiem").click(function(){
+    //     if(check==0){
+
+    //         $("input.timkiem").css("width", "500px");
+    //         $("input.timkiem").css("padding", "5px");
+    //     }
+    // });
+
+});
+
+//search
+
+$(document).ready(function(){
+    $(".c-sub-menu").hide();    
+
+    $(".c-menu").click(function(){
+        $(this).next().slideToggle();
+    })
+});
+

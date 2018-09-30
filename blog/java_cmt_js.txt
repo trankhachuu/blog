@@ -1,0 +1,37 @@
+$(document).ready(function(){
+	$("#submit").click(function(){
+		var noidungbinhluan = $("#noidung").val();
+		var baiviet_id = <?php echo $_GET['id_post']; ?>;
+		var data ='post=' + String(baiviet_id)+ '&nd_bl=' + noidungbinhluan;
+		if(noidungbinhluan == '' || baiviet_id == ''){
+			alert("Nội dung không được để trắng như vậy nhé");
+		} else {
+			var aaaa = "<div class='loading' style='text-align: center'><img width = '50px' src='../images/loader.gif'></div>";
+			$('.khung-loading').append(aaaa).fadeTo(200, 0.1);
+			$.ajax({
+				type: "POST", 
+				url: "../blog/comment.php",
+				data: data, 
+				cache: false, 
+				success: function(server_return){
+					if(server_return.substr(0, 1) == "1"){
+						setTimeout(function(){
+							$('.ds-cmt').remove();
+							$('.loading').remove().fadeTo(200, 0.1);
+							$('.khung-cmt').append(server_return.substr(1, server_return.length)).fadeTo(200, 0.1);
+						}, 1000);
+
+					} else {
+						setTimeout(function(){
+							alert("Không thể đăng bình luận. Vui lòng thử lại!!");
+							$('.loading').remove();
+						},1000);
+					}
+
+				}
+			});
+		}
+	});
+
+
+});

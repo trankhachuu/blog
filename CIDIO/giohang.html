@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Phương Văn Cường - 15/12/2017-->
+    <meta charset="UTF-8">
+    <title>Đặt vé</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <style type="text/css">
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        font-family: 'Times New Roman';
+    }
+
+    .container{
+        max-width: 800px;
+    }
+
+    .cuong_daik{
+        height: 65px;
+        color: #FFF;
+        font-weight: 600;
+        line-height: 65px;
+        background-color: rgba(0, 148, 255, 0.5);
+        width: 100%;
+        top: 0px;
+        z-index: 2;
+        font-size: 20px;
+
+    }
+
+    .float-right{
+        max-width: 960px;
+        margin: 0 auto;
+
+    }
+
+    .cuong_daik > .float-right > span{
+        display: inline-block;
+        margin-right: 20px;
+        height: 50px;
+        line-height: 50px;
+
+    }
+
+    .cuong_daik > .float-right > span > a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .cuong_daik > .float-right > span > a:hover{
+        color: #2388DBFF;
+    }
+
+    table > thead > tr > td {
+        background-color: #1E90FFFF;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        font-weight: bold;
+    }
+
+    td{
+        background: #00BFFFFF;
+
+    }
+
+    tr:hover > td{
+        background: rgba(163, 168, 168, 1);
+    }
+
+    td > a{
+        color: #fff;
+    }
+
+    td:nth-child(4){
+        text-align: center;
+    }
+
+    .foot-content{
+        text-align: center;
+        background-color: rgba(124, 124, 124, 0.5);
+        padding: 10px;
+    }
+
+    .btn:hover{
+        background: #FF1493FF;
+    }
+</style>
+</head>
+<body>
+    <div class="nav cuong_daik"><div class="float-right"><span><a href="index.html">Home</a></span><span><a href="giohang.html">Giỏ Hàng</a></span><span><a href="giohang.html">Lịch sử</a></span><span><a href="index.html">Phim Mới</a></span></div></div>
+
+    <div class="content">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Tên phim</td>
+                            <td>Số Lượng </td>
+                            <td>$$</td>
+                            <td>Chọn</td>
+                            <td>Sửa</td>
+                            <td>Xóa</td>
+                            <td>Thanh toán</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Phim thứ 1</td>
+                            <td>1</td>
+                            <td>50 000 VND</td>
+                            <td><input type="checkbox" name="chon"></td>
+                            <td><a href="">Sửa </a></td>
+                            <td><a href="">Xóa </a></td>
+                            <td><a href="">Thanh toán </a></td>
+                        </tr>
+                        <tr>
+                            <td>Phim thứ 1</td>
+                            <td>1</td>
+                            <td>50 000 VND</td>
+                            <td><input type="checkbox" name="chon"></td>
+                            <td><a href="">Sửa </a></td>
+                            <td><a href="">Xóa </a></td>
+                            <td><a href="">Thanh toán </a></td>
+                        </tr>
+                        <tr>
+                            <td>Phim thứ 1</td>
+                            <td>1</td>
+                            <td>50 000 VND</td>
+                            <td><input type="checkbox" name="chon"></td>
+                            <td><a href="">Sửa </a></td>
+                            <td><a href="">Xóa </a></td>
+                            <td><a href="">Thanh toán </a></td>
+                        </tr>
+                        <tr>
+                            <td>Phim thứ 1</td>
+                            <td>1</td>
+                            <td>50 000 VND</td>
+                            <td><input type="checkbox" name="chon"></td>
+                            <td><a href="">Sửa </a></td>
+                            <td><a href="">Xóa </a></td>
+                            <td><a href="">Thanh toán </a></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div class="foot-content">
+                <button class="btn btn-primary">Thanh toán mục đã chọn</button>
+                <button class="btn btn-primary">Thanh toán tất cả</button>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; background-color: #555; color: #fff; font-size: 25px;padding: 15px; margin-top: 5px;">
+        <strong>Đồ án CIDIO 347</strong>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Phương Văn Cường - 15/12/2017-->
+    <meta charset="UTF-8">
+    <title>Đặt vé</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+   <link rel="stylesheet" href="./home/css/muave.css">
+    <script src="./home/js/muave.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="head"><a href="index.html" style="color: #FFF">TRANG CHỦ </a></div>
+        <div class="form-1">
+            <h2 class="title">Bước 1/5 Chọn Phim</h2>
+            <div class="content">
+                <ul class="list-film clearfix">
+                    <li id="p1" value="Phim Anh hứa" class="chon"><img src ="images/1.jpg"></li>
+                    <li id="p2" value="Dead of alive eustass"><img src ="images/2.jpg"></li>
+                    <li id="p3" value="Phim thiên ý"><img src ="images/3.jpg"></li>
+                    <li id="p4" value="Phim Mối tình đầu của tôi"><img src ="images/4.jpg"></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="form-2">
+            <h2 class="title">Bước 2/5 Chọn Rạp</h2>
+            <div class="content">
+                <div class="row">
+                    <div class="container" style="text-align: center;">
+                        <div class="row" style="">
+
+                            <select class="form-control col-md-6" id="tp" onchange="chonDiaDiem(this)">
+                                <option class="active">Chọn địa điểm</option>
+                                <option>Thành phố Hồ Chí Minh</option>
+                                <option>Đà nẵng</option>
+                                <option>Hà Nội</option>
+                                <option>Eadrang City</option>
+                            </select>
+
+                            <select class="form-control edit col-md-6" id="rap" onchange="chonRap(this)">
+                                <option class="active" value="">Chọn Rạp</option>
+                                <option value="rap1">Rạp Nguyễn Văn Linh</option>
+                                <option value="rap2">Rạp 2/9</option>
+                                <option value="rap3">Rạp Big C</option>
+                                <option value="rap4">Rạp Lotteia</option>
+                            </select></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-3">
+                <h2 class="title">Bước 3/5 Chọn thời gian chiếu</h2>
+                <div class="content">
+                    <ul class="time-line">
+                        <li>10/12</li>
+                        <li>10/12</li>
+                        <li>10/12</li>
+                        <li>10/12</li>
+                        <li class="selected">10/12</li>
+                        <li>10/12</li>
+                        <li>10/12</li>
+                        <li>10/12</li>
+                        <li>10/12</li>
+                        <li>10/12</li>
+                    </ul>
+
+                    <div class="time-show">
+                        <p id="time1">10h 20</p>
+                        <p id="time2">21h30</p>
+                        <p id="time3">22h00</p>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $('#time1').click(function(){
+                        var value = document.getElementById('time1');
+                        alert(time1);
+                    });
+                </script>
+            </div>
+
+            <div class="form-4">
+                <h2 class="title">Bước 4/5 Chọn chổ ngồi</h2>
+                <div class="manhinh"><p style="color: red; font-size: 25px; font-weight: 500; border-bottom:solid 2px red;">Màn hình</p></div>
+                <div class="content" style="text-align: center; display: block; margin-left: 210px;">
+
+                    <div class="hang">
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                    </div>
+                    <div class="hang">
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                    </div>
+                    <div class="hang">
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                    </div>
+                    <div class="hang">
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                    </div>
+                    <div class="hang">
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                        <span class="diem">1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-5">
+                <h2 class="title">Bước 5/5 Thông tin vé - Thanh toán</h2>
+                <div class="form5-head">
+                    <div class="form5-left">
+                        <button class="btn btn-head">Thanh toán bằng tài khoản thành viên</button>
+                        <button class="btn btn-head">Thanh toán qua thẻ nạp</button>
+                    </div>
+                    <div class="form5-right">
+                        <div class="info">
+                            <span class="key">Vé Vip: </span>
+                            <span class="value">60000</span>
+                        </div>
+                        <div class="info">
+                            <span class="key">Vé Vip: </span>
+                            <span class="value">60000</span>
+                        </div>
+                        <div class="info">
+                            <span class="key">Vé Vip: </span>
+                            <span class="value">50000</span>
+                        </div>
+                        <div class="info">
+                            <span class="key">Tổng thanh toán: </span>
+                            <span class="value">15000</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form5-foot">
+                    <input class="form-control form-SDT" placeholder="Số điện thoại /Mã khách hàng người nhận">
+                    <button class="btn btn-foot btn-primary">Giửi tặng vé</button>
+                    <a href="thanhtoan.html" class="btn btn-foot btn-primary">Thanh tóan</a>
+                    <a href="giohang.html" class="btn btn-foot btn-primary">Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+
+            <ul class="progess clearfix">
+                <li id="o1">Chọn Phim</li>
+                <li id="o2">Chọn Rạp</li>
+                <li id="o3">Chọn Giờ</li>
+                <li id="o4">Chọn chổ ngồi</li>
+                <li id="o5">Thanh toán</li>
+            </ul>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<title>BBCode editing</title>
+	<script src="https://cdn.ckeditor.com/4.8.0/standard-all/ckeditor.js"></script>
+</head>
+
+<body>
+
+	<textarea cols="80" id="editor1" name="editor1" rows="10">		[color=#008000][size=200]Apollo 11[/size][/color]		[b]Apollo 11[/b]&nbsp;was the spaceflight that landed the first humans, Americans&nbsp;[url=http://en.wikipedia.org/wiki/Neil_Armstrong]Neil Armstrong[/url]&nbsp;and&nbsp;[url=http://en.wikipedia.org/wiki/Buzz_Aldrin]Buzz Aldrin[/url], on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC. Armstrong spent about [u]two and a half hours[/u] outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission,&nbsp;[url=http://en.wikipedia.org/wiki/Michael_Collins_(astronaut)]Michael Collins[/url], piloted the&nbsp;[url=http://en.wikipedia.org/wiki/Apollo_Command/Service_Module]command[/url]&nbsp;spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.		[color=#008000][size=200]Broadcasting and&nbsp;[/size][i][size=200]quotes[/size][/i][/color]		Broadcast on live TV to a world-wide audience, Armstrong stepped onto the lunar surface and described the event as:		[quote]One small step for [a] man, one giant leap for mankind.[/quote]		[color=#008000][size=200]Technical details[/size][/color]		Launched by a&nbsp;[b]Saturn V[/b]&nbsp;rocket from&nbsp;[url=http://en.wikipedia.org/wiki/Kennedy_Space_Center]Kennedy Space Center[/url]&nbsp;in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of&nbsp;[url=http://en.wikipedia.org/wiki/NASA]NASA[/url]'s Apollo program. The Apollo spacecraft had three parts:		[list=1]		[*][b]Command Module[/b]&nbsp;with a cabin for the three astronauts which was the only part which landed back on Earth		[*][b]Service Module[/b]&nbsp;which supported the Command Module with propulsion, electrical power, oxygen and water		[*][b]Lunar Module[/b]&nbsp;for landing on the Moon.		[/list]
+	</textarea>
+
+	<script>
+		// Replace the <textarea id="editor1"> with an CKEditor
+		// instance, using the "bbcode" plugin, customizing some of the
+		// editor configuration options to fit BBCode environment.
+		CKEDITOR.replace( 'editor1', {
+			height: 280,
+			// Add plugins providing functionality popular in BBCode environment.
+			extraPlugins: 'bbcode,smiley,font,colorbutton',
+			// Remove unused plugins.
+			removePlugins: 'filebrowser,format,horizontalrule,pastetext,pastefromword,scayt,showborders,stylescombo,table,tabletools,tableselection,wsc',
+			// Remove unused buttons.
+			removeButtons: 'Anchor,BGColor,Font,Strike,Subscript,Superscript',
+			// Width and height are not supported in the BBCode format, so object resizing is disabled.
+			disableObjectResizing: true,
+			// Define font sizes in percent values.
+			fontSize_sizes: "30/30%;50/50%;100/100%;120/120%;150/150%;200/200%;300/300%",
+			// Strip CKEditor smileys to those commonly used in BBCode.
+			smiley_images: [
+			'regular_smile.png', 'sad_smile.png', 'wink_smile.png', 'teeth_smile.png', 'tongue_smile.png',
+			'embarrassed_smile.png', 'omg_smile.png', 'whatchutalkingabout_smile.png', 'angel_smile.png',
+			'shades_smile.png', 'cry_smile.png', 'kiss.png'
+			],
+			smiley_descriptions: [
+			'smiley', 'sad', 'wink', 'laugh', 'cheeky', 'blush', 'surprise',
+			'indecision', 'angel', 'cool', 'crying', 'kiss'
+			]
+		});
+	</script>
+</body>
+
+</html>
